@@ -17,7 +17,7 @@ type Serverslice struct {
 
 func main() {
 	http.HandleFunc("/test", handler)
-	http.ListenAndServe("localhost:8080", nil)
+	http.ListenAndServe(":8080", nil)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
